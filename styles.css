@@ -1,0 +1,255 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0a6ebd;
+    padding: 1rem 2rem;
+}
+
+nav .logo img {
+    height: 50px;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+nav .nav-links li {
+    margin: 0 1rem;
+}
+
+nav .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav .cta button {
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    color: #0a6ebd;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav .cta button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Header Section */
+header {
+    background-image: url('images/header-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 80vh;
+    position: relative;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 110, 189, 0.7);
+}
+
+.header-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.header-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.header-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.header-content .cta button {
+    padding: 0.75rem 1.5rem;
+    background-color: #fff;
+    color: #0a6ebd;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header-content .cta button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Main Content */
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #0a6ebd;
+}
+
+#about p {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.product {
+    margin-bottom: 2rem;
+}
+
+.product h3 {
+    color: #0a6ebd;
+    margin-bottom: 1rem;
+}
+
+.product ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+}
+
+#impact .impact-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#impact .impact-list li {
+    flex: 1 1 45%;
+    margin-bottom: 2rem;
+}
+
+#impact h4 {
+    color: #0a6ebd;
+    margin-bottom: 0.5rem;
+}
+
+#contact .contact-info {
+    list-style: none;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact .contact-info li {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#contact .contact-info a {
+    color: #0a6ebd;
+    text-decoration: none;
+}
+
+#contact .contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Section */
+footer {
+    background-color: #0a6ebd;
+    color: #fff;
+    padding: 1rem 2rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content .socials {
+    list-style: none;
+    display: flex;
+}
+
+.footer-content .socials li {
+    margin-left: 1rem;
+}
+
+.footer-content .socials a img {
+    height: 24px;
+}
+
+.footer-links {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav .nav-links li {
+        margin: 0.5rem 0;
+    }
+
+    .header-content h1 {
+        font-size: 2rem;
+    }
+
+    .header-content p {
+        font-size: 1rem;
+    }
+
+    #impact .impact-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #impact .impact-list li {
+        flex: 1 1 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-content .socials {
+        margin-top: 1rem;
+    }
+}
