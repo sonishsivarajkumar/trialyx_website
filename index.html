@@ -1,136 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Basic SEO Meta Tags -->
     <meta charset="UTF-8">
-    <meta name="description" content="Trialyx Health revolutionizes clinical trial data management with AI-powered solutions. Streamline your clinical trial processes from planning to documentation.">
-    <meta name="keywords" content="Trialyx Health, Clinical Trial Data Management, AI-Powered Clinical Trials, Clinical Trial Automation, Healthcare Innovations, Medical Research">
-    <meta name="author" content="Trialyx Health">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Open Graph Meta Tags (for social media sharing) -->
-    <meta property="og:title" content="Trialyx Health - Revolutionizing Clinical Trial Data Management">
-    <meta property="og:description" content="Accelerate medical breakthroughs with AI-powered solutions for clinical trial data management.">
-    <meta property="og:image" content="images/logo.png">
-    <meta property="og:url" content="https://www.trialyx.com">
-    <meta property="og:type" content="website">
-    
-    <!-- Title -->
-    <title>Trialyx Health - Revolutionizing Clinical Trial Data Management</title>
-    
-    <!-- Favicon -->
-
-    <link rel="icon" href="files/trialyx-health-logo-zip-file/svg/logo-color.svg" type="image/svg+xml">
-    
-    <!-- Stylesheet -->
+    <title>Trialyx Health - Revolutionizing Clinical Trial Documentation with AI</title>
+    <meta name="description" content="Trialyx Health is transforming clinical trial documentation with AI-powered solutions. Streamline your clinical trials and accelerate medical breakthroughs.">
+    <meta name="keywords" content="clinical trials, documentation, AI, healthcare, medical research">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
 </head>
-<body>
-    <!-- Header Section -->
-
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="files/trialyx-health-logo-zip-file/svg/logo-color.svg" alt="Trialyx Health Logo">
+<body class="font-sans">
+    <header class="navbar shadow-md">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="files/trialyx-health-logo-zip-file/svg/logo-color.svg" alt="Trialyx Logo" class="h-8 w-auto mr-3">
+                <span class="text-xl font-semibold">Trialyx Health</span>
             </div>
-            <ul class="nav-links">
-                <li><a href="#products">Products</a></li>
-                <li><a href="#impact">Our Impact</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
-            <a href="#contact" class="cta"><button>Get Started</button></a>
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="#about" class="hover:text-gray-300">About</a>
+                <a href="#products" class="hover:text-gray-300">Our Products</a>
+                <a href="#contact" class="cta-button font-bold py-2 px-4 rounded-full hover:bg-blue-700 transition duration-300">Contact Us</a>
+            </div>
         </nav>
-        <div class="header-content">
-            <h1>Revolutionizing Clinical Trial Data Management</h1>
-            <p>Accelerate medical breakthroughs with Trialyx Health's AI-powered solutions.</p>
-            <a href="#contact" class="cta"><button>Contact Us</button></a>
-        </div>
     </header>
 
-    <!-- Main Content -->
     <main>
-        <!-- About Section -->
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Trialyx Health is dedicated to transforming clinical trial data management. Our platform streamlines the entire clinical trial process, enabling researchers and healthcare professionals to focus on improving patient outcomes.</p>
-        </section>
-
-        <!-- Products Section -->
-        <section id="products">
-            <h2>Our Products</h2>
-            <div class="product">
-                <h3>Trialyx Health Document Generator</h3>
-                <p>An advanced, agent-based web application designed to streamline the creation of clinical trial documentation.</p>
-                <ul>
-                    <li>Automated Document Generation</li>
-                    <li>AI-Powered Content Refinement</li>
-                    <li>Flexible Document Customization</li>
-                    <li>Collaborative Workflow Support</li>
-                    <li>Real-Time Progress Tracking</li>
-                </ul>
-            </div>
-            <div class="product">
-                <h3>Clinical Trial Management System <em>(Coming Soon)</em></h3>
-                <p>A comprehensive platform for end-to-end clinical trial management.</p>
-                <ul>
-                    <li>Trial Planning and Scheduling</li>
-                    <li>Participant Recruitment and Management</li>
-                    <li>Data Collection and Analysis</li>
-                    <li>Regulatory Compliance Tools</li>
-                </ul>
+        <section class="hero py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl font-bold mb-4">Revolutionizing Clinical Trial Documentation with AI</h1>
+                <p class="text-xl mb-8">We provide advanced AI-powered solutions to streamline clinical trial processes, enabling researchers to focus on what matters most: improving patient outcomes.</p>
+                <a href="#contact" class="cta-button font-bold py-2 px-4 rounded-full hover:bg-gray-100 transition duration-300">Get Started</a>
             </div>
         </section>
 
-        <!-- Impact Section -->
-        <section id="impact">
-            <h2>Our Impact</h2>
-            <ul class="impact-list">
-                <li>
-                    <h4>Reduce Administrative Burden</h4>
-                    <p>Automate repetitive tasks to save time and resources.</p>
-                </li>
-                <li>
-                    <h4>Enhance Data Accuracy</h4>
-                    <p>Ensure consistency and accuracy in clinical trial data.</p>
-                </li>
-                <li>
-                    <h4>Improve Collaboration</h4>
-                    <p>Foster better teamwork among research teams.</p>
-                </li>
-                <li>
-                    <h4>Ensure Regulatory Compliance</h4>
-                    <p>Stay compliant with FDA and other regulatory bodies.</p>
-                </li>
-            </ul>
+        <section id="about" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title text-3xl font-bold text-center mb-8">About Trialyx</h2>
+                <p class="text-gray-600 text-center max-w-2xl mx-auto">Trialyx is a cutting-edge startup dedicated to transforming the landscape of clinical trials. Our mission is to accelerate medical breakthroughs by simplifying and automating clinical trial workflows, focusing on document generation and trial management.</p>
+            </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>We're here to help. Reach out to us with any questions or to schedule a demo.</p>
-            <ul class="contact-info">
-                <li><strong>Email:</strong> <a href="mailto:info@trialyx.com">info@trialyx.com</a></li>
-                <li><strong>Phone:</strong> Your Contact Number</li>
-                <li><strong>Address:</strong> Your Company Address</li>
-            </ul>
+        <section id="products" class="py-20 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title text-3xl font-bold text-center mb-8">Our Products</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="card bg-white p-8 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-semibold mb-4">Trialyx Health Document Generator</h3>
+                        <p class="text-gray-600 mb-6">Our flagship product is an advanced, agent-based web application built with Streamlit. It's designed to revolutionize the creation of clinical trial documentation using state-of-the-art generative AI technology.</p>
+                        <a href="document-generator.html" class="text-blue-600 font-bold hover:underline">Learn More</a>
+                    </div>
+                    <div class="card bg-white p-8 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-semibold mb-4">Clinical Trial Management System <span class="text-sm font-normal text-gray-500">(Coming Soon)</span></h3>
+                        <p class="text-gray-600 mb-6">A comprehensive AI platform for end-to-end clinical trial management, functioning like a Kayak.com for clinical trials. It optimizes, accelerates, and automates trial processes, addressing critical aspects such as cost, time, regulatory intelligence, and risk analysis.</p>
+                        <ul class="list-disc list-inside text-gray-600 mb-6">
+                            <li>📅 Trial planning and scheduling</li>
+                            <li>👥 Participant recruitment and management</li>
+                            <li>📊 Data collection and analysis</li>
+                            <li>🔒 Regulatory compliance tools</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 bg-gray-100">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="section-title text-3xl font-bold mb-8">Contact Us</h2>
+                <p class="text-gray-600 mb-4">Email: info@trialyx.com</p>
+                <p class="text-gray-600 mb-4">Website: www.trialyx.com</p>
+                <a href="mailto:info@trialyx.com" class="cta-button font-bold py-2 px-4 rounded-full hover:bg-blue-700 transition duration-300">Get in Touch</a>
+            </div>
         </section>
     </main>
 
-    <!-- Footer Section -->
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2024 Trialyx Health. All rights reserved.</p>
-            <ul class="socials">
-                <li><a href="#"><img src="images/facebook.png" alt="Facebook"></a></li>
-                <li><a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a></li>
-                <li><a href="#"><img src="images/twitter.png" alt="Twitter"></a></li>
-            </ul>
-        </div>
-        <div class="footer-links">
-            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Cookie Policy</a>
+    <footer class="py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:underline">Documentation</a></li>
+                        <li><a href="#" class="hover:underline">API Reference</a></li>
+                        <li><a href="#" class="hover:underline">Tutorials</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:underline">About Us</a></li>
+                        <li><a href="#" class="hover:underline">Careers</a></li>
+                        <li><a href="#" class="hover:underline">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:underline">Terms of Service</a></li>
+                        <li><a href="#" class="hover:underline">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center">
+                <p>&copy; 2024 Trialyx Health. All rights reserved.</p>
+            </div>
         </div>
     </footer>
-
-    <!-- Scripts (if any) -->
 </body>
 </html>
