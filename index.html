@@ -6,58 +6,83 @@
     <title>Trialyx Health - Revolutionizing Clinical Trial Documentation with AI</title>
     <meta name="description" content="Trialyx Health is transforming clinical trial documentation with AI-powered solutions. Streamline your clinical trials and accelerate medical breakthroughs.">
     <meta name="keywords" content="clinical trials, documentation, AI, healthcare, medical research">
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(90deg, #4F46E5, #818CF8);
+        }
+    </style>
 </head>
 <body class="font-sans">
-    <header class="navbar shadow-md">
+    <header class="bg-white shadow-md">
         <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
             <div class="flex items-center">
                 <img src="files/trialyx-health-logo-zip-file/svg/logo-color.svg" alt="Trialyx Logo" class="h-8 w-auto mr-3">
-                <span class="text-xl font-semibold">Trialyx Health</span>
+                <span class="text-xl font-semibold text-gray-800">Trialyx Health</span>
             </div>
             <div class="hidden md:flex items-center space-x-4">
-                <a href="#about" class="hover:text-gray-300">About</a>
-                <a href="#products" class="hover:text-gray-300">Our Products</a>
-                <a href="#contact" class="cta-button font-bold py-2 px-4 rounded-full hover:bg-blue-700 transition duration-300">Contact Us</a>
+                <a href="#about" class="text-gray-600 hover:text-gray-800">About</a>
+                <a href="#product" class="text-gray-600 hover:text-gray-800">Our Product</a>
+                <a href="#features" class="text-gray-600 hover:text-gray-800">Features</a>
+                <a href="#contact" class="bg-blue-600 text-white font-bold py-2 px-4 rounded-full hover:bg-blue-700 transition duration-300">Contact Us</a>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="hero py-20">
+        <section class="gradient-bg text-white py-20">
             <div class="container mx-auto px-6 text-center">
                 <h1 class="text-4xl font-bold mb-4">Revolutionizing Clinical Trial Documentation with AI</h1>
-                <p class="text-xl mb-8">We provide advanced AI-powered solutions to streamline clinical trial processes, enabling researchers to focus on what matters most: improving patient outcomes.</p>
-                <a href="#contact" class="cta-button font-bold py-2 px-4 rounded-full hover:bg-gray-100 transition duration-300">Get Started</a>
+                <p class="text-xl mb-8">We provide advanced AI-powered Solutions to streamline the creation of clinical trial documents, enabling researchers to focus on what matters most: improving patient outcomes.</p>
+                <a href="#contact" class="bg-white text-blue-600 font-bold py-2 px-4 rounded-full hover:bg-gray-100 transition duration-300">Get Started</a>
             </div>
         </section>
 
         <section id="about" class="py-20">
             <div class="container mx-auto px-6">
-                <h2 class="section-title text-3xl font-bold text-center mb-8">About Trialyx</h2>
-                <p class="text-gray-600 text-center max-w-2xl mx-auto">Trialyx is a cutting-edge startup dedicated to transforming the landscape of clinical trials. Our mission is to accelerate medical breakthroughs by simplifying and automating clinical trial workflows, focusing on document generation and trial management.</p>
+                <h2 class="text-3xl font-bold text-center mb-8">About Trialyx</h2>
+                <p class="text-gray-600 text-center max-w-2xl mx-auto">Trialyx is a cutting-edge startup dedicated to transforming the landscape of clinical trial documentation. Our mission is to accelerate medical breakthroughs by simplifying and automating clinical trial workflows, focusing exclusively on document generation and management.</p>
             </div>
         </section>
 
         <section id="products" class="py-20 bg-gray-100">
             <div class="container mx-auto px-6">
-                <h2 class="section-title text-3xl font-bold text-center mb-8">Our Products</h2>
+                <h2 class="text-3xl font-bold text-center mb-4">Solutions</h2>
+                <p class="text-gray-600 text-center max-w-2xl mx-auto mb-12">Clinicians, researchers, and regulators rely on TRIALYX HEALTH® technology and evidence to learn faster and power smarter care for every patient.</p>
                 <div class="grid md:grid-cols-2 gap-8">
-                    <div class="card bg-white p-8 rounded-lg shadow-md">
+                    <div class="bg-white p-8 rounded-lg shadow-md">
                         <h3 class="text-2xl font-semibold mb-4">Trialyx Health Document Generator</h3>
-                        <p class="text-gray-600 mb-6">Our flagship product is an advanced, agent-based web application built with Streamlit. It's designed to revolutionize the creation of clinical trial documentation using state-of-the-art generative AI technology.</p>
+                        <p class="text-gray-600 mb-6">Revolutionize your clinical trial documentation with our AI-powered platform, streamlining the creation process and enhancing collaboration among research teams.</p>
                         <a href="document-generator.html" class="text-blue-600 font-bold hover:underline">Learn More</a>
                     </div>
-                    <div class="card bg-white p-8 rounded-lg shadow-md">
+                    <div class="bg-white p-8 rounded-lg shadow-md">
                         <h3 class="text-2xl font-semibold mb-4">Clinical Trial Management System <span class="text-sm font-normal text-gray-500">(Coming Soon)</span></h3>
-                        <p class="text-gray-600 mb-6">A comprehensive AI platform for end-to-end clinical trial management, functioning like a Kayak.com for clinical trials. It optimizes, accelerates, and automates trial processes, addressing critical aspects such as cost, time, regulatory intelligence, and risk analysis.</p>
-                        <ul class="list-disc list-inside text-gray-600 mb-6">
-                            <li>📅 Trial planning and scheduling</li>
-                            <li>👥 Participant recruitment and management</li>
-                            <li>📊 Data collection and analysis</li>
-                            <li>🔒 Regulatory compliance tools</li>
-                        </ul>
+                        <p class="text-gray-600 mb-6">Experience the future of clinical trial management with our comprehensive AI platform, optimizing every aspect of your trials from planning to execution.</p>
+                        <a href="clinical-trial-management.html" class="text-blue-600 font-bold hover:underline">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="key-features" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Key Features</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-4">📝 Automated Document Generation</h3>
+                        <p class="text-gray-600">Effortlessly generate a wide range of clinical trial documents using advanced AI models.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-4">🤖 AI-powered Content Refinement</h3>
+                        <p class="text-gray-600">Continuously refine documents through intelligent agents that check for missing information, timeline inconsistencies, and redundancies.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-4">🔄 Flexible Document Customization</h3>
+                        <p class="text-gray-600">Customize and design any type of clinical trial document according to specific needs.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-4">👥 Collaborative Workflow Support</h3>
+                        <p class="text-gray-600">Enable seamless collaboration among research teams with our intuitive platform.</p>
                     </div>
                 </div>
             </div>
@@ -65,15 +90,15 @@
 
         <section id="contact" class="py-20 bg-gray-100">
             <div class="container mx-auto px-6 text-center">
-                <h2 class="section-title text-3xl font-bold mb-8">Contact Us</h2>
+                <h2 class="text-3xl font-bold mb-8">Contact Us</h2>
                 <p class="text-gray-600 mb-4">Email: info@trialyx.com</p>
                 <p class="text-gray-600 mb-4">Website: www.trialyx.com</p>
-                <a href="mailto:info@trialyx.com" class="cta-button font-bold py-2 px-4 rounded-full hover:bg-blue-700 transition duration-300">Get in Touch</a>
+                <a href="mailto:info@trialyx.com" class="bg-blue-600 text-white font-bold py-2 px-4 rounded-full hover:bg-blue-700 transition duration-300">Get in Touch</a>
             </div>
         </section>
     </main>
 
-    <footer class="py-12">
+    <footer class="bg-gray-800 text-white py-12">
         <div class="container mx-auto px-6">
             <div class="grid md:grid-cols-3 gap-8">
                 <div>
