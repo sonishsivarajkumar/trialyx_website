@@ -2,30 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trialyx Clinical Trial Management System</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <meta name="description" content="Experience the future of clinical trial management with our comprehensive AI platform, optimizing every aspect of your trials from planning to execution.">
+    <meta name="keywords" content="Trialyx Health, Clinical Trial Management, AI, Healthcare">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="font-sans bg-gray-100">
-    <header class="bg-white shadow-md">
-        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+<body class="font-sans antialiased">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
             <div class="flex items-center">
-                <img src="files/trialyx-health-logo-zip-file/svg/logo-color.svg" alt="Trialyx Logo" class="h-8 w-auto mr-3">
-                <span class="text-xl font-semibold text-gray-800">Trialyx Health</span>
+                <a href="index.html" class="flex items-center">
+                    <img src="files/trialyx-health-logo-zip-file/svg/logo-color.svg" alt="Trialyx Logo" class="h-8 w-auto mr-3">
+                    <span class="text-xl font-semibold text-gray-800">Trialyx Health</span>
+                </a>
             </div>
-            <div class="hidden md:flex items-center space-x-4">
-                <a href="index.html" class="text-gray-600 hover:text-gray-800">Home</a>
-                <a href="#" class="bg-blue-600 text-white font-bold py-2 px-4 rounded-full hover:bg-blue-700 transition duration-300">Contact Us</a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="text-gray-600 hover:text-blue-600">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-blue-600">About</a>
+                <a href="contact.html" class="text-gray-600 hover:text-blue-600">Contact</a>
             </div>
-        </nav>
-    </header>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="index.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-200">Home</a>
+            <a href="about.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-200">About</a>
+            <a href="contact.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-200">Contact</a>
+        </div>
+    </nav>
 
-    <main class="container mx-auto px-6 py-12">
-        <h1 class="text-4xl font-bold mb-8">Trialyx Clinical Trial Management System <span class="text-2xl font-normal text-gray-500">(Coming Soon)</span></h1>
-        <p class="text-xl mb-8">Experience the future of clinical trial management with our comprehensive AI platform, optimizing every aspect of your trials from planning to execution.</p>
-        
-        <h2 class="text-2xl font-semibold mb-4">Key Features:</h2>
-        <ul class="list-disc list-inside mb-8">
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-24 mt-16">
+        <h1 class="text-4xl font-bold mb-8 text-blue-600">Trialyx Clinical Trial Management System <span class="text-2xl font-normal text-gray-500">(Coming Soon)</span></h1>
+        <p class="text-xl mb-8 text-gray-700">Experience the future of clinical trial management with our comprehensive AI platform, optimizing every aspect of your trials from planning to execution.</p>
+
+        <h2 class="text-2xl font-semibold mb-4 text-blue-600">Key Features:</h2>
+        <ul class="list-disc list-inside mb-8 text-gray-700">
             <li>AI-driven trial planning and scheduling</li>
             <li>Intelligent participant recruitment and management</li>
             <li>Advanced data collection and analysis tools</li>
@@ -33,8 +57,8 @@
             <li>Real-time risk assessment and mitigation</li>
         </ul>
 
-        <h2 class="text-2xl font-semibold mb-4">Benefits:</h2>
-        <ul class="list-disc list-inside mb-8">
+        <h2 class="text-2xl font-semibold mb-4 text-blue-600">Benefits:</h2>
+        <ul class="list-disc list-inside mb-8 text-gray-700">
             <li>Significantly reduce trial duration and costs</li>
             <li>Improve patient recruitment and retention rates</li>
             <li>Enhance data quality and integrity</li>
@@ -42,11 +66,11 @@
             <li>Accelerate time-to-market for new treatments</li>
         </ul>
 
-        <a href="#" class="bg-blue-600 text-white font-bold py-2 px-4 rounded-full hover:bg-blue-700 transition duration-300">Join the Waitlist</a>
+        <a href="contact.html" class="bg-blue-600 text-white font-bold py-3 px-6 rounded-full hover:bg-blue-700 transition duration-300">Join the Waitlist</a>
     </main>
 
-    
-<footer class="bg-gray-800 text-white py-12">
+    <!-- Footer -->
+   <footer class="bg-gray-800 text-white py-12">
     <div class="container mx-auto px-6">
         <div class="grid md:grid-cols-3 gap-8">
             <div>
@@ -60,9 +84,9 @@
             <div>
                 <h4 class="text-lg font-semibold mb-4">Company</h4>
                 <ul class="space-y-2">
-                    <li><a href="#" class="hover:underline">About Us</a></li>
+                    <li><a href="about.html" class="hover:underline">About Us</a></li>
                     <li><a href="#" class="hover:underline">Careers</a></li>
-                    <li><a href="#" class="hover:underline">Contact Us</a></li>
+                    <li><a href="contact.html" class="hover:underline">Contact Us</a></li>
                 </ul>
             </div>
             <div>
@@ -79,5 +103,16 @@
         </div>
     </div>
 </footer>
+
+<!-- Scripts -->
+<script>
+    // Mobile menu toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+</script>
 </body>
 </html>
